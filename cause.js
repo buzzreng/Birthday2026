@@ -3,22 +3,18 @@
     { 
         text: "Happy Birthday! I was going to send you a hug in a box, but the post office said I was too weird and it wouldn't fit 🥴", 
         emoji: "📦",
-        gif: "gif1.gif"
     },
     { 
         text: "May your day be filled with love, laughter, and endless joy 😽", 
         emoji: "💗",
-        gif: "gif2.gif"
     },
     { 
         text: "Wishing you massive success in everything! Just remember, success is 10% hard work and 90% having a cool partner like me to keep you sane 🤪", 
         emoji: "🔐",
-        gif: "gif1.gif"
     },
     { 
         text: "I love you more than I love a stable internet connection—cheers to another year of making memories together! 🤟", 
         emoji: "🛜",
-        gif: "gif2.gif"
     }
 ];
 
@@ -39,7 +35,6 @@ function createReasonCard(reason) {
     text.innerHTML = `${reason.emoji} ${reason.text}`;
    
     card.appendChild(text);
-    card.appendChild(gifOverlay);
     
     gsap.from(card, {
         opacity: 0,
