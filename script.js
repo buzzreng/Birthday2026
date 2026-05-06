@@ -19,7 +19,7 @@ function typeGreeting() {
 }
 
 // Create floating elements
-const floatingElements = ['💖', '✨', '🌸', '💫', '💕'];
+const floatingElements = ['🍟', '✨', '💖', '😻', '🦭'];
 function createFloating() {
     const element = document.createElement('div');
     element.className = 'floating';
