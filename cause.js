@@ -25,32 +25,6 @@ const shuffleButton = document.querySelector('.shuffle-button');
 const reasonCounter = document.querySelector('.reason-counter');
 let isTransitioning = false;
 
-// Create reason card with gif
-function createReasonCard(reason) {
-    const card = document.createElement('div');
-    card.className = 'reason-card';
-    
-    const text = document.createElement('div');
-    text.className = 'reason-text';
-    text.innerHTML = `${reason.emoji} ${reason.text}`;
-    
-    const gifOverlay = document.createElement('div');
-    gifOverlay.className = 'gif-overlay';
-    gifOverlay.innerHTML = `<img src="${reason.gif}" alt="Friendship Memory">`;
-    
-    card.appendChild(text);
-    card.appendChild(gifOverlay);
-    
-    gsap.from(card, {
-        opacity: 0,
-        y: 50,
-        duration: 0.5,
-        ease: "back.out"
-    });
-
-    return card;
-}
-
 // Display new reason
 function displayNewReason() {
     if (isTransitioning) return;
